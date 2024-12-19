@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ORCID Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Login with ORCID</h1>
+  <a id="login-btn" href="/login"><button>Login with ORCID</button></a>
+</body>
+<script>  
+  localStorage.removeItem('access_token');
+  localStorage.removeItem('orcid');
+  localStorage.clear();
+  sessionStorage.clear();
+</script>
+</html>
